@@ -70,6 +70,7 @@ body:
         - Identity
         - Industry Utilization
         - Network Architecture
+        - Serialization
         - Shared / cross-team
         - PMO
     validations:

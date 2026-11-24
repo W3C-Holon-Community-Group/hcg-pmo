@@ -7,6 +7,7 @@
     {"name": "team:identity",       "color": "0e7490", "description": "Identity team"},
     {"name": "team:industry",       "color": "0369a1", "description": "Industry Utilization team"},
     {"name": "team:network-arch",   "color": "1e40af", "description": "Network Architecture team"},
+    {"name": "team:serialization",  "color": "1e3a8a", "description": "Serialization team"},
     {"name": "team:shared",         "color": "64748b", "description": "Cross-team work, including shared use cases"},
     {"name": "team:pmo",            "color": "475569", "description": "Program Management Office: process, tooling, automation"},
 

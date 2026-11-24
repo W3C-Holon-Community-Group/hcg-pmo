@@ -13,7 +13,7 @@ Org page → **Projects → New project → Board**. Name it **HCG**, and set vi
 | Field | Type | Values | Set by |
 |---|---|---|---|
 | **Status** | Single select (built-in) | `Inbox`, `Ready`, `In progress`, `In review`, `Done`, `Parked` | Built-in workflows and Actions (below); people may move cards by hand |
-| **Team** | Single select | `Core Specification`, `Databook`, `Harmonization`, `Identity`, `Industry Utilization`, `Network Architecture`, `Shared`, `PMO` | PMO at triage (later: the inbox-triage automation, mirroring the `team:` label) |
+| **Team** | Single select | `Core Specification`, `Databook`, `Harmonization`, `Identity`, `Industry Utilization`, `Network Architecture`, `Serialization`, `Shared`, `PMO` | PMO at triage (later: the inbox-triage automation, mirroring the `team:` label) |
 | **Quarter goal** | Single select | One option per current quarterly goal, named like its milestone, e.g. `2027-Q1 Core spec draft 1`. Starts with `Unplanned`. | PMO at quarterly planning |
 | **Target date** | Date | Optional | Whoever owns the item |
 | **Source** | Single select | `Meeting`, `Drive`, `Issue`, `Agent` | The person or agent opening the item; notes intake sets `Meeting` |
@@ -53,6 +53,7 @@ Create each view with **New view**, then save the filter and layout.
 | **Identity** | Board | `label:"team:identity"` | — | ″ |
 | **Industry Utilization** | Board | `label:"team:industry"` | — | ″ |
 | **Network Architecture** | Board | `label:"team:network-arch"` | — | ″ |
+| **Serialization** | Board | `label:"team:serialization"` | — | ″ |
 | **Shared** | Board | `label:"team:shared"` | — | Cross-team use cases |
 | **PMO triage** | Table | `status:Inbox` | Sort by created, oldest first | Weekly PMO triage |
 | **Decisions pending** | Table | `label:"type:decision" is:open` | Sort by Target date | Monthly meeting, leadership |
