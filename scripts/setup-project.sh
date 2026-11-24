@@ -27,7 +27,7 @@ create_field() {
 }
 
 create_field "Team" --data-type SINGLE_SELECT \
-  --single-select-options "Core Specification,Databook,Harmonization,Identity,Industry Utilization,Network Architecture,Shared,PMO"
+  --single-select-options "Core Specification,Databook,Harmonization,Identity,Industry Utilization,Network Architecture,Serialization,Shared,PMO"
 create_field "Quarter goal" --data-type SINGLE_SELECT --single-select-options "Unplanned"
 create_field "Target date"  --data-type DATE
 create_field "Source"       --data-type SINGLE_SELECT --single-select-options "Meeting,Drive,Issue,Agent"

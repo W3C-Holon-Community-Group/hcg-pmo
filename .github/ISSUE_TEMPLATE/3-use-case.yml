@@ -41,6 +41,7 @@ body:
         - Identity
         - Industry Utilization
         - Network Architecture
+        - Serialization
     validations:
       required: true
   - type: input
