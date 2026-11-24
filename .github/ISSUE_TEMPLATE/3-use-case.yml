@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This form captures the essentials so the group can triage your use case. Once it's accepted, the full entry is written as `UC-XXX-short-title.md` from the use-case template (v2) and opened as a PR in `HCG Administration/Use Cases/` of the working repo. Leave the number as UC-XXX: the chairs or editors assign it on merge.
+        This form captures the essentials so the group can triage your use case. Once it's accepted, the full entry is written as `UC-XXX-short-title.md` from `HCG Administration/Use Cases/use-case-template.md` and opened as a PR in that folder of the working repo. Leave the number as UC-XXX: the chairs or editors assign it on merge.
 
         **Before you post:** this repository is public, and anything posted here is a Contribution under the W3C Community Contributor License Agreement. Don't include proprietary data, client names or internal tooling. Use synthetic or anonymized examples.
   - type: textarea

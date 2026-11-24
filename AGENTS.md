@@ -46,7 +46,7 @@ Notes, decisions and use cases follow the repo templates so automation can parse
 |---|---|---|
 | Meeting notes | HCG meeting-notes templates (working-team, leadership, full group) | `YYYY-MM-DD.md` in the matching meetings folder of the working repo (see CONTRIBUTING.md) |
 | Decision | [`decisions/_template.md`](decisions/_template.md) | `decisions/YYYY-MM-DD-short-title.md` in this repo |
-| Use case | Use-case template (v2) | `HCG Administration/Use Cases/UC-XXX-short-title.md` in the working repo |
+| Use case | `HCG Administration/Use Cases/use-case-template.md` | `HCG Administration/Use Cases/UC-XXX-short-title.md` in the working repo |
 | Issue | One of the four issue forms | Inbox on the board |
 
 File and folder names: dates are `YYYY-MM-DD`; slugs are lowercase kebab-case.
