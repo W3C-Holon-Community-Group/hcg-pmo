@@ -71,7 +71,7 @@ Every meeting should leave three things in the working repo: **notes**, **decisi
 
 - The meeting bot (Read.ai) is the default way to capture them. The bot should be on the calendar series, not added each time.
 - If the bot missed a meeting, any attendee fills in the **Meeting notes** issue form. Bullets are enough.
-- Notes land through a pull request as `YYYY-MM-DD.md` in the matching meetings folder of the working repo: a team's `Meetings/` folder, or `HCG Administration/Working Team Leadership Meetings/` and `HCG Administration/Full Group Meetings/`. The full folder map will live in `automation/config/meetings.yml`.
+- Notes land through a pull request as `YYYY-MM-DD.md` in the matching `meetings/` folder of the working repo: the team's own folder (for example `Identity/meetings/`), `pmo/meetings/` for PMO meetings, or `plenaries/meetings/` for full-group meetings.
 - The PMO (or an agent under PMO review) turns each action into an issue with the team label, each decision into a decision file, and links them all from the notes PR.
 
 Attendees should only ever need to supply raw notes.

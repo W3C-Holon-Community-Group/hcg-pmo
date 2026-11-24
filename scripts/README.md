@@ -8,7 +8,7 @@ Do these in order. Each step is safe to repeat.
 
 - **General → Features:** Issues on; Discussions off for now (it is still a proposal); Wiki off.
 - **Collaborators and teams:** Christine and Kurt Cagle *Admin*, Patrick Audley *Maintain*, Heather Ray *Admin*.
-- **Branches → Add rule for `main`:** require a pull request with 1 approval; no force pushes. On GitHub's free plan this is only available once the repo is public.
+- **Branches → Add rule for `main`:** require a pull request with 1 approval; no force pushes.
 
 ## 2. Labels, in both repos
 

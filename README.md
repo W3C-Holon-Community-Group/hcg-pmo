@@ -4,7 +4,7 @@ The Program Management Office for the W3C Holon Community Group (HCG): a means t
 
 The group's deliverables are written in the **working repo** ([W3C-Holon-Community-Group/working-groups](https://github.com/W3C-Holon-Community-Group/working-groups)). Finished assets are promoted to the **official W3C repo** ([w3c-cg/holon](https://github.com/w3c-cg/holon)). This repo holds everything about *how* the group works, so process changes never clutter the deliverables.
 
-> This is a community workspace. The official home of the group is the [W3C Holon Community Group page](https://www.w3.org/groups/cg/holon/). Treat everything posted here as public: Community Group work is meant to be, and everything you contribute is a Contribution under the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/).
+> This is a community workspace. Content is licensed as set out in [LICENSE.md](LICENSE.md). The official home of the group is the [W3C Holon Community Group page](https://www.w3.org/groups/cg/holon/). Treat everything posted here as public: Community Group work is meant to be, and everything you contribute is a Contribution under the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/agreements/cla/).
 
 ## Participating in three steps
 
