@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: W3C Holon Community Group page
+    url: https://www.w3.org/groups/cg/holon/
+    about: The group's official home, with how to join.
+  - name: Mailing list (public-holon@w3.org)
+    url: https://lists.w3.org/Archives/Public/public-holon/
+    about: Formal notices, the weekly digest and calls for review.
+  - name: Official W3C Holon repo
+    url: https://github.com/w3c-cg/holon
+    about: Where finished assets are published. Open work issues here, not there.
