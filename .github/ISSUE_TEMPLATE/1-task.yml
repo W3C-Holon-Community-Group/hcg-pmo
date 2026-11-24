@@ -1,0 +1,70 @@
+name: Task
+description: A piece of work for a working team or the PMO.
+title: "[Task] "
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rough is fine: the PMO tidies. Everything here is public and falls under the W3C Community Contributor License Agreement, so keep confidential material out.
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team should own this? The PMO adds the matching label.
+      options:
+        - Core Specification
+        - Databook
+        - Harmonization
+        - Identity
+        - Industry Utilization
+        - Network Architecture
+        - Shared / cross-team
+        - PMO
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing
+      description: A few sentences or bullets. Link any draft Doc, file or earlier issue.
+    validations:
+      required: true
+  - type: input
+    id: done-when
+    attributes:
+      label: Done when
+      description: One line that says how we'll know it's finished.
+      placeholder: "e.g. A PR adds the Identity profile draft to Identity/ and two reviewers have approved it"
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size (optional)
+      options:
+        - Small
+        - Medium
+        - Large
+    validations:
+      required: false
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did this come from?
+      options:
+        - A meeting
+        - Google Drive
+        - An issue or discussion
+        - An agent
+        - Other
+    validations:
+      required: false
+  - type: checkboxes
+    id: volunteer
+    attributes:
+      label: Volunteering
+      options:
+        - label: I'd like to take this on myself.
+          required: false

@@ -1,0 +1,76 @@
+name: Decision needed
+description: A question the group needs to settle.
+title: "[Decision] "
+labels: ["type:decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Once decided, the outcome is recorded as a file in `decisions/` of the PMO repo and this issue is closed with a link to it.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The decision to be made, as one clear question.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why it needs deciding now, and any constraints. Link background material.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: At least two, one per line, with a short pro and con for each.
+      value: |
+        1. **Option A**:
+        2. **Option B**:
+    validations:
+      required: true
+  - type: input
+    id: recommendation
+    attributes:
+      label: Recommended option (optional)
+      description: If you have one, say which and why in a line.
+    validations:
+      required: false
+  - type: dropdown
+    id: who-decides
+    attributes:
+      label: Who decides
+      options:
+        - Full group (plenary or mailing list)
+        - Working Team Leadership
+        - Chairs
+        - A single working team
+        - PMO
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Decide by
+      description: YYYY-MM-DD
+      placeholder: "2027-01-15"
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team most affected
+      options:
+        - Core Specification
+        - Databook
+        - Harmonization
+        - Identity
+        - Industry Utilization
+        - Network Architecture
+        - Shared / cross-team
+        - PMO
+    validations:
+      required: true

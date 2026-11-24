@@ -1,0 +1,73 @@
+name: Meeting notes (manual)
+description: Use when the meeting bot missed a meeting. Bullets are enough.
+title: "Notes: <meeting>, YYYY-MM-DD"
+labels: ["type:notes"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for catching this. Bullets are fine: the PMO turns them into the notes file, the action-item issues and any decision records. If you have a bot report or transcript, paste its link below.
+
+        Meeting notes are public. Leave out anything said off the record, and don't attribute positions to people without their agreement.
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: YYYY-MM-DD
+      placeholder: "2026-12-03"
+    validations:
+      required: true
+  - type: dropdown
+    id: meeting
+    attributes:
+      label: Meeting
+      options:
+        - Core Specification
+        - Databook
+        - Harmonization
+        - Identity
+        - Industry Utilization
+        - Network Architecture
+        - Working Team Leadership
+        - PMO
+        - Full group / plenary
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: attendees
+    attributes:
+      label: Attendees
+      description: Names, one per line or comma-separated. Note regrets if you know them.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: What was discussed, by topic.
+    validations:
+      required: false
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Decisions
+      description: One per line, with a short reason. Write "None" if there were none.
+      placeholder: "- Decided X, because Y"
+    validations:
+      required: true
+  - type: textarea
+    id: actions
+    attributes:
+      label: Action items
+      description: One per line, with owner and due date where known. Write "None" if there were none.
+      placeholder: "- Draft the Identity profile outline (owner: name, due: YYYY-MM-DD)"
+    validations:
+      required: true
+  - type: input
+    id: recording
+    attributes:
+      label: Recording, transcript or bot report (optional)
+      description: A link, if one exists and can be shared with the group.
+    validations:
+      required: false

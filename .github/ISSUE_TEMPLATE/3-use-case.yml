@@ -1,0 +1,165 @@
+name: Use case
+description: Propose a new holon use case. The full write-up follows as a PR using the use-case template.
+title: "[Use case] "
+labels: ["type:use-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form captures the essentials so the group can triage your use case. Once it's accepted, the full entry is written as `UC-XXX-short-title.md` from `HCG Administration/Use Cases/use-case-template.md` and opened as a PR in that folder of the working repo. Leave the number as UC-XXX: the chairs or editors assign it on merge.
+
+        **Before you post:** this repository is public, and anything posted here is a Contribution under the W3C Community Contributor License Agreement. Don't include proprietary data, client names or internal tooling. Use synthetic or anonymized examples.
+  - type: textarea
+    id: summary
+    attributes:
+      label: 1. Summary
+      description: One paragraph. If someone reads only this, they should understand what the use case is and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 2. Motivation / problem statement
+      description: What breaks, what's missing, or what's needlessly hard today without holon-based architecture? Why is it the CG's problem rather than something existing standards already cover?
+    validations:
+      required: true
+  - type: textarea
+    id: contribution-boundary
+    attributes:
+      label: Contribution boundary
+      description: What data or tooling sits behind this use case, what you can share publicly, and what stays private. "All examples are synthetic" is a complete answer.
+    validations:
+      required: true
+  - type: dropdown
+    id: working-team
+    attributes:
+      label: Originating working team
+      options:
+        - Core Specification
+        - Databook
+        - Harmonization
+        - Identity
+        - Industry Utilization
+        - Network Architecture
+    validations:
+      required: true
+  - type: input
+    id: contributing-teams
+    attributes:
+      label: Contributing teams (optional)
+      placeholder: "e.g. Identity, Network Architecture"
+    validations:
+      required: false
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: "e.g. supply chain, municipal government, biopharma, enterprise knowledge graphs"
+    validations:
+      required: true
+  - type: input
+    id: audience
+    attributes:
+      label: Audience
+      description: Who this use case is meant to persuade or serve.
+      placeholder: "e.g. W3C, technical roles, vendors, academics, decision makers"
+    validations:
+      required: false
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      description: Which layer this use case exercises (section 4 of the template).
+      options:
+        - normative-core
+        - profile
+        - domain-implementation
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Maturity
+      options:
+        - idea
+        - worked-example
+        - prototype
+        - independent-implementations
+    validations:
+      required: true
+  - type: dropdown
+    id: data-availability
+    attributes:
+      label: Data availability
+      options:
+        - public
+        - synthetic
+        - anonymized
+        - proprietary-not-shared
+    validations:
+      required: true
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Holon features exercised
+      options:
+        - label: Whole/part nesting (holarchy), including overlapping or multi-parent membership
+        - label: Boundary / portal semantics (what crosses, under whose rules)
+        - label: Boundary validation (e.g. SHACL constraints)
+        - label: Event history, temporal state, retraction
+        - label: Provenance and attestation
+        - label: Identity, authority and access across boundaries
+        - label: Federation, discovery, messaging across systems
+        - label: DataBook packaging / human-readable exchange
+        - label: Harmonization with other ontologies or world views
+        - label: Grounding or memory for LLM agents
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 5. Scenario
+      description: The user story, then a short concrete narrative. Main flow steps are welcome but can wait for the full write-up.
+      value: |
+        **As a** <actor>, **I want to** <goal>, **so that** <benefit>.
+
+        Narrative:
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 6. Requirements this suggests (optional)
+      description: Draft requirements, one per line. They'll be numbered and traced to flow steps in the full write-up.
+    validations:
+      required: false
+  - type: textarea
+    id: prior-art
+    attributes:
+      label: 8. Existing solutions / prior art (optional)
+    validations:
+      required: false
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: 10. Open questions / risks (optional)
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Proposed priority
+      description: MoSCoW. The chairs may revise this during triage.
+      options:
+        - Must
+        - Should
+        - Could
+        - Won't (this round)
+    validations:
+      required: true
+  - type: checkboxes
+    id: cla
+    attributes:
+      label: Contribution
+      options:
+        - label: I understand this is public and a Contribution under the W3C Community Contributor License Agreement, and it contains no proprietary or confidential material.
+          required: true

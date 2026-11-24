@@ -1,0 +1,29 @@
+{
+  "_comment": "Source of truth for HCG labels in both repos. Apply with scripts/setup-labels.py. 'rename_from' renames an existing label (keeping it on its issues) instead of creating a duplicate.",
+  "labels": [
+    {"name": "team:core-spec",      "color": "1d4ed8", "description": "Core Specification team"},
+    {"name": "team:data-book",      "color": "2563eb", "description": "Databook team"},
+    {"name": "team:harmonization",  "color": "0891b2", "description": "Harmonization team"},
+    {"name": "team:identity",       "color": "0e7490", "description": "Identity team"},
+    {"name": "team:industry",       "color": "0369a1", "description": "Industry Utilization team"},
+    {"name": "team:network-arch",   "color": "1e40af", "description": "Network Architecture team"},
+    {"name": "team:shared",         "color": "64748b", "description": "Cross-team work, including shared use cases"},
+    {"name": "team:pmo",            "color": "475569", "description": "Program Management Office: process, tooling, automation"},
+
+    {"name": "type:task",           "color": "7c3aed", "description": "A piece of work"},
+    {"name": "type:decision",       "color": "a21caf", "description": "A question the group needs to settle"},
+    {"name": "type:use-case",       "color": "9333ea", "description": "A holon use case"},
+    {"name": "type:notes",          "color": "c026d3", "description": "Meeting notes, or a request to file them"},
+
+    {"name": "ready-to-promote",    "color": "16a34a", "description": "Done here; a team lead asks to promote it to w3c-cg/holon"},
+    {"name": "promoted",            "color": "15803d", "description": "Merged into the official W3C Holon repo"},
+
+    {"name": "good-first-issue",    "color": "7057ff", "description": "A good place for a newcomer to start", "rename_from": "good first issue"},
+    {"name": "help-wanted",         "color": "008672", "description": "Valid work that needs a volunteer",   "rename_from": "help wanted"},
+    {"name": "blocked",             "color": "dc2626", "description": "Can't move until something else happens; say what in a comment"},
+
+    {"name": "size:small",          "color": "e2e8f0", "description": "About an hour or two"},
+    {"name": "size:medium",         "color": "cbd5e1", "description": "A few sessions"},
+    {"name": "size:large",          "color": "94a3b8", "description": "Several weeks or several people; consider splitting"}
+  ]
+}
