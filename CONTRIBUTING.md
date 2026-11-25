@@ -53,7 +53,7 @@ The PMO applies labels. You don't have to, but you may.
 
 | Group | Labels |
 |---|---|
-| Team | `team:core-spec`, `team:data-book`, `team:harmonization`, `team:identity`, `team:industry`, `team:network-arch`, `team:serialization`, `team:shared`, `team:pmo` |
+| Team | `team:core-spec`, `team:data-book`, `team:harmonization`, `team:identity`, `team:industry`, `team:network-arch`, `team:messaging-serialization`, `team:shared`, `team:pmo` |
 | Type | `type:task`, `type:decision`, `type:use-case`, `type:notes` |
 | Lifecycle | `ready-to-promote`, `promoted` |
 | Help | `good-first-issue`, `help-wanted`, `blocked` |
